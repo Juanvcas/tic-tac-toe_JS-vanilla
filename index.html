@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/styles/main.css" />
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<main>
+			<aside class="rounds-cont">
+				<h2>Rounds</h2>
+				<div id="rounds"></div>
+			</aside>
+			<section class="game-cont">
+				<div id="names"></div>
+				<h1>Tic-Tac-Toe</h1>
+				<span id="player-turn">It's the turn of <b>Player X</b></span>
+				<div id="table"></div>
+				<button id="reset">Reset</button>
+				<button id="new-game">New Game</button>
+			</section>
+			<div id="setNames">
+				<form name="form" onsubmit="setNames(event)">
+					<label for="p1">Player's 1 name</label>
+					<input id="p1" name="p1" type="text" />
+					<label for="p2">Player's 2 name</label>
+					<input id="p2" name="p2" type="text" />
+					<div class="setNames_buttons">
+						<button type="submit">Set Names</button>
+						<button type="button" onclick="cancelNames()">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<script src="./src/main.js"></script>
+	</body>
+</html>
